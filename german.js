@@ -1,5 +1,8 @@
-var Tanslate = function(german) {
+var Translate = function(german) {
   german.translateToGerman = function(greeting) {
-    return 
+    return "it work";
   }
+  return german;
 }(Translate);
+
+Translate.translateToGerman();
