@@ -17,11 +17,13 @@
 
 
 
-// var Translate = function(german) {
-//   german.translateToGerman = function(greeting) {
-//     return "it work";
-//   }
-//   return german;
-// }(Translate);
+var Translate = function(german) {
+  var translatedGreeting = "";
+  german.translateToGerman = function(greeting) {
+    console.log(greeting)
+    return translatedGreeting;
+  };
+  return german;
+}(Translate);
 
-// Translate.translateToGerman();
+Translate.translateToGerman();
