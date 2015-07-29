@@ -8,17 +8,17 @@ var Translate = function() {
       inputLanguage = $('textarea').val();
       console.log(inputLanguage);
       selection = Translate.selection;
-      console.log(selection)
+      console.log(selection);
       // console.log(selection);
       // if (selection === 'French') {
       //   //call french method
       //   //displayGreeting.innerHTML += 
       // }
-      // if (selection === 'German') {
-      //   console.log(selection);
+      if (selection === 'German') {
+        alert('it worked');
       //   translateToGerman(inputLanguage);
       //   //displayGreeting.innerHTML += 
-      // }
+      }
       // if (selection === 'Spanish') {
       //   //call spanish method
       //   //displayGreeting.innerHTML += 
