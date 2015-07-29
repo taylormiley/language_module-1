@@ -1,7 +1,7 @@
 var Translate = function() {
   var inputLanguage = "";
   var displayGreeting = document.getElementById('displayArea');
-  var selection = ""
+  var selection = "";
 
   return {
     setSelection: function(currentSelection) {
@@ -11,6 +11,12 @@ var Translate = function() {
       inputLanguage = $('textarea').val();
       if (selection === "German") {
         this.translateToGerman(inputLanguage);
+      }
+      if (selection === "French") {
+        this.translateToFrench(inputLanguage);
+      }
+      if (selection === "Spanish") {
+        this.translateToSpanish(inputLanguage);
       }
     }
   };
