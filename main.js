@@ -6,16 +6,15 @@ var Translate = function() {
   return {
     setSelection: function(currentSelection) {
       selection = currentSelection;
+      console.log(selection);
     },
     getInput: function() {
-      inputLanguage = $('textarea').val();
+      inputLanguage = $('textarea').val().toLowerCase();
       if (selection === "German") {
         this.translateToGerman(inputLanguage);
-      }
-      if (selection === "French") {
+      } else if (selection === "French") {
         this.translateToFrench(inputLanguage);
-      }
-      if (selection === "Spanish") {
+      } else if (selection === "Spanish") {
         this.translateToSpanish(inputLanguage);
       }
     }

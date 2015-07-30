@@ -1,18 +1,18 @@
-var Translate = function(german) {
+var Translate = function(french) {
   var lexicon = {
-    "merry": "frohe",
-    "christmas": "Weihnachten",
-    "and": "und",
-    "happy": "gutes",
-    "new": "neues",
-    "year": "jahr"
+    "merry": "joyeux",
+    "christmas": "Noël",
+    "and": "et",
+    "happy": "heureux",
+    "new": "nouveau",
+    "year": "année"
   };
 
   var vals = Object.keys(lexicon).map(function (key){
     return lexicon[key];
   });
   var translatedGreeting = "";
-  german.translateToGerman = function(greeting) {
+  french.translateToFrench = function(greeting) {
     var newGreeting = greeting.split(" ");
     for (var i = 0; i < newGreeting.length; i++) {
       for (var j = 0; j < Object.keys(lexicon).length; j++) {
@@ -25,7 +25,8 @@ var Translate = function(german) {
     translatedGreeting = newGreeting.charAt(0).toUpperCase() + newGreeting.substr(1);
     $('#displayArea').append(translatedGreeting + "!");
   };
-  return german;
+  return french;
 }(Translate);
 
-Translate.translateToGerman();
+Translate.translateToFrench();
+
