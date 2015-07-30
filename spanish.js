@@ -23,4 +23,4 @@ var Translate = function(spanish) {
     $('#displayArea').text(translatedGreeting + "!");
   };
   return spanish;
-}(Translate);
+}(Translate || {});

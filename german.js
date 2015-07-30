@@ -31,4 +31,4 @@ var Translate = function(german) {
     $('#displayArea').text(translatedGreeting + "!");
   };
   return german;
-}(Translate);
+}(Translate || {});

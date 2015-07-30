@@ -19,7 +19,7 @@ var Translate = function() {
       }
     }
   };
-}();
+}(Translate || {});
 
 $('#translate').on('click', function(){
   var currentSelection = $('select option:selected').val();

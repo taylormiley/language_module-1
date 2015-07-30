@@ -26,4 +26,4 @@ var Translate = function(french) {
     $('#displayArea').text(translatedGreeting + "!");
   };
   return french;
-}(Translate);
+}(Translate || {});
