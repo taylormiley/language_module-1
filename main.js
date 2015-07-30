@@ -28,8 +28,7 @@ $('#translate').on('click', function(){
 });
 
 
-$('#sayIt').on('click', function(e){
-  e.preventDefault();
+$('#sayIt').on('click', function(){
   var translatedGreeting = $('#displayArea').text();
   responsiveVoice.speak(translatedGreeting);
 });
