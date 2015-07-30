@@ -21,10 +21,14 @@ var Translate = function() {
   };
 }();
 
-Translate.setSelection();
-
 $('#translate').on('click', function(){
   var currentSelection = $('select option:selected').val();
   Translate.setSelection(currentSelection);
   Translate.getInput();
+});
+
+
+$('#sayIt').on('click', function(){
+  var translatedGreeting = $('#displayArea').text();
+  responsiveVoice.speak(translatedGreeting);
 });
