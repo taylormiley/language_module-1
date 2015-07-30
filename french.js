@@ -5,7 +5,7 @@ var Translate = function(french) {
     "and": "et",
     "happy": "heureux",
     "new": "nouveau",
-    "year": "année"
+    "year": "annee"
   };
 
   // var vals = Object.keys(lexicon).map(function (key){
