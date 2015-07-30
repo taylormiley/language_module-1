@@ -8,9 +8,6 @@ var Translate = function(spanish) {
     "year": "año"
   };
 
-  // var vals = Object.keys(lexicon).map(function (key){
-  //   return lexicon[key];
-  // });
   var translatedGreeting = "";
   spanish.translateToSpanish = function(greeting) {
     var newGreeting = greeting.split(" ");
