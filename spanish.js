@@ -23,9 +23,7 @@ var Translate = function(spanish) {
     }
     newGreeting = newGreeting.toString().replace(/,/g, " ")
     translatedGreeting = newGreeting.charAt(0).toUpperCase() + newGreeting.substr(1);
-    $('#displayArea').append(translatedGreeting + "!");
+    $('#displayArea').text(translatedGreeting + "!");
   };
   return spanish;
 }(Translate);
-
-Translate.translateToSpanish();

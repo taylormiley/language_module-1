@@ -23,9 +23,7 @@ var Translate = function(german) {
     }
     newGreeting = newGreeting.toString().replace(/,/g, " ")
     translatedGreeting = newGreeting.charAt(0).toUpperCase() + newGreeting.substr(1);
-    $('#displayArea').append(translatedGreeting + "!");
+    $('#displayArea').text(translatedGreeting + "!");
   };
   return german;
 }(Translate);
-
-Translate.translateToGerman();
