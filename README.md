@@ -1,5 +1,5 @@
 # Holiday Translation App
-#### This is a holiday greeting translation app created as part of a NSS group project by @sqfish and @taylormiley
+#### This is a holiday greeting translation app created as part of a NSS group project by @sqfish and @ddbunc2
 ####Functionality:
 * Accepts user input
 * Accepts user language of choice
