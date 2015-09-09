@@ -12,4 +12,4 @@
   
 ####Future Functionality
 * Aditional supported languages (currently Spanish, German, and French are supported)
-*Only basic holiday words are accepted currently
+* Only basic holiday words are accepted currently
